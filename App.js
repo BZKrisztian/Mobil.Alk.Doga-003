@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+/*
+* File: App.js
+* Author: Batki Zoltan Krisztian
+* Copyright: 2025, Batki Zoltan Krisztian
+* Group: Szoft II-1-N
+* Date: 2025-02-13
+* Github: https://github.com/BZKrisztian
+* Licenc: --
+*/
+import React from "react";
+import { View } from "react-native";
+import Cylinder from "./components/cylinder";
+import styles from "./styles";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Cylinder/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
